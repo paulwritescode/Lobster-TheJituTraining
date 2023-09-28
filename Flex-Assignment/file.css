@@ -1,8 +1,14 @@
+.mothercontainer {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  border-radius: 12px;
+}
 .container {
   background-color: rgb(214, 156, 156);
   margin: 20px;
   padding: 20px;
   display: flex;
+  justify-content: center;
 }
 
 .left {
@@ -74,16 +80,29 @@
 
 /* colors for the reaction, memory, verbal, visual */
 .one {
-  background-color: rgba(198, 107, 15, 0.384);
+  background-color: rgba(198, 106, 15, 0.089);
 }
 .two {
-  background-color: rgba(55, 198, 15, 0.384);
+  background-color: rgba(55, 198, 15, 0.065);
 }
 .three {
-  background-color: rgba(24, 15, 198, 0.384);
+  background-color: rgba(24, 15, 198, 0.087);
 }
 .four {
-  background-color: rgba(198, 15, 100, 0.384);
+  background-color: rgba(198, 15, 100, 0.109);
+}
+
+.one .icon {
+  color: rgb(198, 106, 15);
+}
+.two .icon {
+  color: rgb(55, 198, 15);
+}
+.three .icon {
+  color: rgb(24, 15, 198);
+}
+.four .icon {
+  color: rgb(198, 15, 100);
 }
 
 .icon {
@@ -96,4 +115,11 @@ button {
   color: white;
   border-radius: 19px;
   padding: 10px;
+  margin-top: 20px;
+}
+.numbers {
+  color: gray;
+}
+span {
+  color: black;
 }
