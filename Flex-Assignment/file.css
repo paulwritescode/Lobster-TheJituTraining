@@ -1,69 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  background-color: rgb(233, 233, 233);
+}
+/* Making the background white */
 .mothercontainer {
   background-color: rgb(255, 255, 255);
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 12px;
+  width: inherit;
 }
+
 .container {
-  background-color: rgb(214, 156, 156);
-  margin: 20px;
-  padding: 20px;
+  background-color: hsl(221, 100%, 96%);
+  margin: 50px;
+  padding: 70px;
   display: flex;
   justify-content: center;
 }
 
+/* left-side styling*/
 .left {
   display: flex;
-  background-color: rgb(103, 67, 255);
+  width: 250 px;
+  height: 320px;
+  background-image: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
   color: white;
   flex-direction: column;
   border-radius: 12px;
   align-items: center;
 }
-
+/* right-side styling */
 .right {
   flex-direction: column;
-  background-color: white;
+
   display: flex;
+  width: 250px;
+  justify-content: center;
 }
 
 .right,
 .left {
-  margin: 0px;
   padding: 20px;
 }
 
+/* Left side components */
+
+/* your result */
+.toptext {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+/* circle */
 .circle {
-  background-color: rgb(74, 36, 206);
+  background-image: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-}
-.bignumber {
-  font-size: 50px;
 }
 
+/* Number inside circle */
+.bignumber {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+/* of 100 */
+.smallnumber {
+  font-weight: 700;
+}
+
+/* Text at the center "Great" */
+.centertext {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+/* paragraph at the botom */
 .bottomtext {
+  margin-top: 10;
+  font-size: 15px;
+  font-weight: 700;
   width: 200px;
   text-align: center;
 }
 
+/* ********************** */
 /* Right Side Styling */
-.right {
-  width: 200px;
-  justify-content: center;
-}
-.one {
-}
-
 .summery {
   margin-bottom: 10px;
   font-size: 23px;
+  font-weight: 700;
 }
+
+/* Styling righside containers for reaction/memory/verbal/visual */
 .one,
 .two,
 .three,
@@ -72,37 +118,45 @@
   justify-content: space-between;
   margin-top: 5px;
   margin-bottom: 5px;
-  padding: 5px;
+  padding: 9px;
   padding-left: 7px;
   padding-right: 7px;
   border-radius: 5px;
 }
 
 /* colors for the reaction, memory, verbal, visual */
+/* Reaction */
 .one {
-  background-color: rgba(198, 106, 15, 0.089);
-}
-.two {
-  background-color: rgba(55, 198, 15, 0.065);
-}
-.three {
-  background-color: rgba(24, 15, 198, 0.087);
-}
-.four {
-  background-color: rgba(198, 15, 100, 0.109);
+  background-color: hsl(0, 100%, 95%);
 }
 
+/* Memory */
+.two {
+  background-color: hsl(39, 100%, 95%);
+}
+
+/* Verbal */
+.three {
+  background-color: hsl(166, 100%, 95%);
+}
+
+/* Visual */
+.four {
+  background-color: hsl(234, 85%, 95%);
+}
+
+/* Styling indivisual icon+name */
 .one .icon {
-  color: rgb(198, 106, 15);
+  color: hsl(0, 100%, 67%);
 }
 .two .icon {
-  color: rgb(55, 198, 15);
+  color: hsl(39, 100%, 56%);
 }
 .three .icon {
-  color: rgb(24, 15, 198);
+  color: hsl(166, 100%, 37%);
 }
 .four .icon {
-  color: rgb(198, 15, 100);
+  color: hsl(234, 85%, 45%);
 }
 
 .icon {
@@ -110,15 +164,34 @@
   display: flex;
 }
 
+/* Styling the Button */
 button {
-  background-color: rgb(0, 0, 0);
+  background-color: hsl(224, 30%, 27%);
   color: white;
-  border-radius: 19px;
-  padding: 10px;
+  border-radius: 122px;
+  padding: 16px;
   margin-top: 20px;
+  border: none;
+  font-weight: 700;
 }
+
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+.text .numbers {
+  font-size: 18px;
+}
+/* styling the numbers */
 .numbers {
   color: gray;
+  font-weight: 700;
+  font-size: 18px;
 }
 span {
   color: black;
