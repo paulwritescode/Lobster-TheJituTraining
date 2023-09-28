@@ -89,7 +89,7 @@ body {
 
 /* Styling inside the items */
 /* images */
-img {
+.logo {
   border-radius: 50%;
 }
 
@@ -129,4 +129,13 @@ img {
 }
 .lowertext {
   padding-bottom: 10px;
+}
+
+/* svg */
+.svg {
+  display: flex;
+  justify-content: space-between;
+}
+.newsvg {
+  float: ;
 }
