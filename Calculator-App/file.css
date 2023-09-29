@@ -7,10 +7,15 @@ body {
 }
 /* Color to the divs */
 body {
-  background-color: hsl(172, 67%, 45%);
+  background-color: hsl(185, 41%, 84%);
 }
 .mothercontainer {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  border-radius: 12px;
 }
 /* right div */
 .right {
@@ -19,7 +24,7 @@ body {
 
 /* delete this after done */
 .left {
-  background-color: rgb(191, 213, 197);
+  background-color: rgb(255, 255, 255);
 }
 /* styling the mother-container */
 .mothercontainer {
@@ -34,6 +39,7 @@ body {
   padding-left: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
+  margin: 20px;
 }
 .topinput {
   display: flex;
@@ -44,6 +50,7 @@ body {
   margin-left: 5px;
   padding: 5px;
   background-color: hsl(189, 41%, 97%);
+  border-radius: 5px;
 }
 .textaboveinput {
   font-size: 24px;
@@ -51,9 +58,21 @@ body {
   margin-left: 5px;
 }
 
+/* numbers formatting */
+.number {
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  margin-right: 5px;
+}
+
 /* left hand grid */
-#selecttip {
+#selecttip,
+#bill,
+#numberpeople {
   margin-top: 25px;
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
 }
 
 .gridcontainer {
@@ -61,42 +80,43 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 4px;
+  margin: 5px;
 }
-
+/* boxes */
 #box1 {
   background-color: hsl(183, 100%, 15%);
   color: white;
-  border-radius: 3px;
 }
 #box2 {
   background-color: hsl(183, 100%, 15%);
   color: white;
-  border-radius: 3px;
 }
 #box3 {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
-  border-radius: 3px;
 }
 #box4 {
   background-color: hsl(183, 100%, 15%);
   color: white;
-  border-radius: 3px;
 }
 #box5 {
   background-color: hsl(183, 100%, 15%);
   color: white;
-  border-radius: 3px;
 }
 #box6 {
   background-color: hsl(189, 41%, 97%);
   color: hsl(183, 100%, 15%);
-  border-radius: 3px;
 }
 
 /* padding/margin for grids */
 .box {
-  padding: 3px;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
 }
 
 /* number inside grid */
@@ -110,13 +130,11 @@ body {
 }
 
 /* righ side */
-
 .ones {
   display: flex;
   flex-direction: column;
 }
 .right {
-  width: inherit;
   height: 305px;
   display: flex;
   flex-direction: column;
