@@ -19,11 +19,91 @@ body {
 
 /* delete this after done */
 .left {
-  background-color: red;
+  background-color: rgb(191, 213, 197);
 }
 /* styling the mother-container */
 .mothercontainer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* left side styling */
+.left {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.topinput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 5px;
+  background-color: hsl(189, 41%, 97%);
+}
+.textaboveinput {
+  font-size: 24px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* left hand grid */
+#selecttip {
+  margin-top: 25px;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+}
+
+#box1 {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 3px;
+}
+#box2 {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 3px;
+}
+#box3 {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  border-radius: 3px;
+}
+#box4 {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 3px;
+}
+#box5 {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 3px;
+}
+#box6 {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  border-radius: 3px;
+}
+
+/* padding/margin for grids */
+.box {
+  padding: 3px;
+}
+
+/* number inside grid */
+.gridnumber {
+  margin-left: 5px;
+}
+
+/* below the grid */
+#numberpeople {
+  margin-top: 10px;
 }
