@@ -62,6 +62,10 @@ body {
   background-color: hsl(189, 41%, 97%);
   border-radius: 5px;
 }
+
+.topinput:hover {
+  cursor: pointer;
+}
 .textaboveinput {
   font-size: 24px;
   margin-right: 5px;
@@ -215,4 +219,7 @@ button {
   margin-bottom: 30px;
   padding: 10px;
   border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
 }
