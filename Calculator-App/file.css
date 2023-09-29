@@ -4,7 +4,17 @@
 
 body {
   font-family: Space Mono;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
 }
+/* top logo */
+.toplogo {
+  margin: 35px;
+}
+
 /* Color to the divs */
 body {
   background-color: hsl(185, 41%, 84%);
