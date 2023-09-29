@@ -30,7 +30,8 @@ body {
 
 /* left side styling */
 .left {
-  padding: 10px;
+  height: 305px;
+  padding-left: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -106,4 +107,80 @@ body {
 /* below the grid */
 #numberpeople {
   margin-top: 10px;
+}
+
+/* righ side */
+
+.ones {
+  display: flex;
+  flex-direction: column;
+}
+.right {
+  width: inherit;
+  height: 305px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  justify-content: space-between;
+}
+.topone,
+.bottomone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* padding and margin */
+.topone {
+  margin-top: 29px;
+}
+.bottomone {
+  margin: 25px;
+}
+
+.numberright {
+  font-weight: 700;
+  font-size: 30px;
+  color: hsl(172, 67%, 45%);
+  margin-left: 20px;
+}
+/* formating the icons on right side */
+.rightimg {
+  color: hsl(172, 67%, 45%);
+}
+.numberright img {
+  width: 14px;
+  margin-right: 3px;
+}
+.topone .textaboveinput {
+  color: white;
+  font-size: 9px;
+  margin-right: 30px;
+}
+/* the dim (/person) */
+.topdim {
+  color: hsl(0, 0%, 67%);
+}
+/* bold the text abice- tip person & total */
+.topbold {
+  font-weight: 700;
+}
+
+.bottomone .textaboveinput {
+  color: white;
+  font-size: 9px;
+  margin-right: 30px;
+}
+/* button */
+button {
+  background-color: hsl(172, 67%, 45%);
+  border-style: none;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  margin: 26px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 5px;
 }
