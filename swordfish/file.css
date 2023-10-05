@@ -5,19 +5,23 @@
   font-size: 16px;
 }
 body {
-  background-color: hsl(206, 94%, 87%);
+  background-color: hsl(217, 100%, 97%);
   height: 100vh;
   font-family: Ubuntu;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .main-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px;
   background-color: white;
-  height: 530px;
-  width: 70%;
+  height: 80%;
+  width: 50%;
+  border-radius: 7px;
 }
 .left {
   display: flex;
@@ -26,6 +30,8 @@ body {
   background-size: cover;
   border-radius: 12px;
   height: 100%;
+  width: 300px;
+  padding: 30px;
 }
 
 .text {
@@ -40,7 +46,21 @@ body {
   justify-content: center;
   width: 30px;
   height: 30px;
+  border: 1px solid white;
+  color: white;
+}
+.text:hover {
+  cursor: pointer;
+}
+
+.activecircle {
   background-color: hsl(206, 94%, 87%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
 }
 .faint {
   color: hsl(206, 94%, 87%);
@@ -53,7 +73,7 @@ body {
 .right {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 40px;
   padding: 40px;
   padding-top: 10px;
 }
@@ -65,7 +85,8 @@ body {
 .self-box {
   border: 1px solid hsl(229, 24%, 87%);
   border-radius: 7px;
-  padding: 7px;
+  padding: 10px;
+  width: 100%;
 }
 .self-box:hover {
   cursor: pointer;
@@ -78,11 +99,41 @@ body {
   padding: 10px;
   padding-left: 0px;
 }
+.top {
+  padding-top: 0px;
+}
 
 .additional-info {
   color: hsl(231, 11%, 63%);
 }
 .top-box {
-  padding: 10px 50px 10px 0px;
   color: hsl(213, 96%, 18%);
+}
+.box {
+  margin: 5px 0px 5px 0px;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.next {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border-style: none;
+  border-radius: 9px;
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  width: 110px;
+}
+.back {
+  text-decoration: none;
+  text-align: center;
+  color: hsl(231, 11%, 63%);
+  padding: 10px;
+  border-style: none;
+  border-radius: 9px;
+  width: 110px;
 }
