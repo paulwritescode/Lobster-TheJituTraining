@@ -1,0 +1,135 @@
+@import url(https://fonts.google.com/specimen/Inter);
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 20px;
+  font-family: Inter;
+}
+
+/* Navbar  styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.two {
+  display: flex;
+  gap: 30px;
+  margin-right: 50px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* css grid */
+.mothercontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+/* box1 */
+#box1 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+#box1 img {
+  width: 100%;
+  background-size: cover;
+}
+
+/* box2 */
+#box2 {
+  grid-area: 1 / 3 / 3 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 30px;
+  background-color: hsl(240, 100%, 5%);
+}
+
+#new {
+  font-size: 38px;
+  color: hsl(35, 77%, 62%);
+  font-weight: 700;
+}
+
+.insidebox2 {
+  color: white;
+  font-weight: 400;
+}
+
+.insidebox2 .one {
+  font-weight: 700;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.one:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
+
+/* box3 */
+#box3 {
+  font-weight: 700;
+  font-size: 58px;
+  color: hsl(240, 100%, 5%);
+  padding-top: 12px;
+}
+
+/* Box 4 */
+#box4 {
+  padding-top: 12px;
+  color: hsl(236, 13%, 42%);
+}
+.bottomtext {
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  width: 120px;
+  text-align: center;
+  padding: 14px;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.bottomtext:hover {
+  cursor: pointer;
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+}
+
+hr {
+  border: 1px solid rgb(255, 255, 255, 20%);
+  width: 100%;
+}
+
+/* bottom divs */
+.bottomdiv {
+  display: flex;
+  margin-top: 50px;
+}
+.divbottomone {
+  display: flex;
+}
+.left img {
+  width: 100px;
+  padding-right: 12px;
+}
+.topnumber {
+  font-size: 30px;
+  color: hsl(233, 8%, 79%);
+}
+.middletext {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: hsl(240, 100%, 5%);
+  font-weight: 800;
+}
+
+.lowertext {
+  color: hsl(236, 13%, 42%);
+}
